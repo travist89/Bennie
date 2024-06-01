@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<Gamepath>D:\SteamLibrary\steamapps\common\Stardew Valley</Gamepath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.1.1" />
+	 <Compile Remove="C:\Users\Travis\source\repos\StardewValleyMods\PetInteraction_Project\PetInteraction" />
+  </ItemGroup>
+
+</Project>

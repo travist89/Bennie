@@ -1,1 +1,4 @@
-.vs/Bennie/FileContentIndex/01c8baef-0b24-4afb-abd4-e35acdec7997.vsdx
+.vs/
+*.user
+*.suo
+*.psess
