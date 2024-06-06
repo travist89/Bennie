@@ -21,7 +21,7 @@ public class ModEntry : Mod
     private void OnGameLaunched(object? sender, GameLaunchedEventArgs e)
     {
         // Load and replace the existing sound cue.
-        ReplaceSound("rooster", "assets/000000da.wav");
+        ReplaceSound("cat", "assets/bennie.wav");
     }
 
     private void ReplaceSound(string cueName, string filePath)
@@ -44,7 +44,7 @@ public class ModEntry : Mod
 
     private void OnButtonPressed(object? sender, ButtonPressedEventArgs e)
     {
-        // Check if the world is ready
+        // Check if the world is readygit 
         if (!Context.IsWorldReady)
             return;
 
@@ -75,7 +75,7 @@ public class ModEntry : Mod
                     if (petTile.Equals(tile))
                     {
                         // Play the custom sound when the pet is petted
-                        Game1.playSound("rooster");
+                        Game1.playSound("cat");
 
                         // Log to SMAPI console for debugging
                         this.Monitor.Log($"Played custom sound for petting the pet at tile {tile}.", LogLevel.Debug);

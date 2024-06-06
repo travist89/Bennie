@@ -7,5 +7,4 @@ C:\Users\Travis\source\repos\Bennie\Bennie\obj\Release\net6.0\Bennie.AssemblyInf
 C:\Users\Travis\source\repos\Bennie\Bennie\obj\Release\net6.0\Bennie.csproj.CoreCompileInputs.cache
 C:\Users\Travis\source\repos\Bennie\Bennie\obj\Release\net6.0\Bennie.sourcelink.json
 C:\Users\Travis\source\repos\Bennie\Bennie\obj\Release\net6.0\Bennie.dll
-C:\Users\Travis\source\repos\Bennie\Bennie\bin\Release\net6.0\assets\0000006e.wav
-C:\Users\Travis\source\repos\Bennie\Bennie\bin\Release\net6.0\assets\000000da.wav
+C:\Users\Travis\source\repos\Bennie\Bennie\bin\Release\net6.0\assets\bennie.wav
