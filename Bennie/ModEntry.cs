@@ -44,7 +44,7 @@ public class ModEntry : Mod
 
     private void OnButtonPressed(object? sender, ButtonPressedEventArgs e)
     {
-        // Check if the world is readygit 
+        // Check if the world is ready
         if (!Context.IsWorldReady)
             return;
 
@@ -62,17 +62,16 @@ public class ModEntry : Mod
             foreach (var character in Game1.currentLocation.characters)
             {
                 // Check if the character is a pet
-                if (character is Pet pet)
+                if (character is Pet pet && pet.petType == "Cat")
                 {
-                    // Get the tile location of the pet using the Position property
-                    Vector2 petTile = pet.Position / 64f;
+                    // Create a bounding box for the pet
+                    Rectangle petBox = new Rectangle((int)pet.Position.X, (int)pet.Position.Y, pet.Sprite.getWidth(), pet.Sprite.getHeight());
 
-                    // Convert the tile information to a string and print to console
-                    string petTileString = petTile.ToString();
-                    this.Monitor.Log(petTileString, LogLevel.Debug);
+                    // Create a bounding box for the tile under the cursor
+                    Rectangle cursorBox = new Rectangle((int)tile.X * 64, (int)tile.Y * 64, 64, 64);
 
-                    // Check if the pet's tile location matches the cursor's tile location
-                    if (petTile.Equals(tile))
+                    // Check if the boxes intersect
+                    if (petBox.Intersects(cursorBox))
                     {
                         // Play the custom sound when the pet is petted
                         Game1.playSound("cat");
