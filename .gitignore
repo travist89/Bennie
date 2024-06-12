@@ -2,3 +2,6 @@
 *.user
 *.suo
 *.psess
+
+# Ignore Visual Studio 'obj' directory
+**/obj/
