@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bennie")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3531c2d2317838740a2e516ce89ab7b03e6c4dc1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd350001f687504f78439fea3506ab5d976d1dc2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bennie")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bennie")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

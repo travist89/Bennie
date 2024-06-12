@@ -5,6 +5,7 @@ using StardewValley.Characters;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using StardewValley.Audio;
+using Microsoft.Xna.Framework.Graphics;
 
 public class ModEntry : Mod
 {
@@ -14,6 +15,7 @@ public class ModEntry : Mod
     {
         helper.Events.GameLoop.GameLaunched += OnGameLaunched;
         helper.Events.Input.ButtonPressed += OnButtonPressed;
+        helper.Events.Content.AssetRequested += this.OnAssetRequested;
     }
 
     private void OnGameLaunched(object? sender, GameLaunchedEventArgs e)
@@ -75,5 +77,12 @@ public class ModEntry : Mod
     {
         float proximityDistance = 128f; // equivalent to 2 tiles (64 pixels each)
         return Vector2.Distance(player.Position, pet.Position) <= proximityDistance;
+    }
+    private void OnAssetRequested(object sender, AssetRequestedEventArgs e)
+    {
+        if (e.Name.IsEquivalentTo("Animals/cat"))
+        {
+            e.LoadFromModFile<Texture2D>("assets/catbennie.png", AssetLoadPriority.Medium);
+        }
     }
 }

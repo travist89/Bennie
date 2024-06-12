@@ -8,3 +8,4 @@ C:\Users\Travis\source\repos\Bennie\Bennie\obj\Release\net6.0\Bennie.csproj.Core
 C:\Users\Travis\source\repos\Bennie\Bennie\obj\Release\net6.0\Bennie.sourcelink.json
 C:\Users\Travis\source\repos\Bennie\Bennie\obj\Release\net6.0\Bennie.dll
 C:\Users\Travis\source\repos\Bennie\Bennie\bin\Release\net6.0\assets\bennie.wav
+C:\Users\Travis\source\repos\Bennie\Bennie\bin\Release\net6.0\assets\catbennie.png
